@@ -21,14 +21,12 @@ body{
   line-height:1.6;
 }
 
-/* container */
 .container{
   width:calc(100% - 40px);
   max-width:var(--container);
   margin:0 auto;
 }
 
-/* header */
 .site-header{
   border-bottom:1px solid rgba(255,255,255,0.04);
   position:sticky;
@@ -61,10 +59,15 @@ body{
   font-size:14px;
 }
 
-/* hero */
 .hero{
   padding:40px 0;
 }
+
+.hero-image{
+  max-width: 100%;
+  height: auto;
+}
+
 .hero-grid{
   display:grid;
   grid-template-columns:1fr;
@@ -95,15 +98,14 @@ body{
   border:1px solid rgba(255,255,255,0.06);
 }
 
-/* features */
 .features{
   display:grid;
+  witdh:100%
   grid-template-columns:1fr;
   gap:16px;
   margin:30px 0;
 }
 .feature{
-  display:flex;
   gap:12px;
   background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
   padding:12px;
@@ -114,7 +116,6 @@ body{
 .feature h3{margin:0 0 6px 0}
 .feature p{margin:0;color:var(--muted);font-size:14px}
 
-/* work / projects */
 .work{margin:40px 0}
 .work-grid{
   display:grid;
@@ -125,7 +126,6 @@ body{
 .work-grid img{width:100%;height:220px;object-fit:cover;border-radius:6px}
 .work-grid figcaption{color:var(--muted);font-size:14px;padding:8px 4px}
 
-/* testimonials */
 .testimonials{margin:40px 0}
 .test-grid{display:grid;grid-template-columns:1fr;gap:12px}
 blockquote{
@@ -134,11 +134,9 @@ blockquote{
 }
 blockquote cite{display:block;margin-top:8px;color:var(--white);font-weight:600}
 
-/* content pages */
 .content{padding:30px 0}
 .lead{color:var(--muted)}
 
-/* contact */
 .contact-grid{display:grid;grid-template-columns:1fr;gap:20px}
 .contact-form label{display:block;margin-bottom:12px;color:var(--muted)}
 .contact-form input,
@@ -149,12 +147,10 @@ blockquote cite{display:block;margin-top:8px;color:var(--white);font-weight:600}
 }
 .contact-aside{background:rgba(255,255,255,0.02);padding:16px;border-radius:8px}
 
-/* footer */
 .site-footer{border-top:1px solid rgba(255,255,255,0.04);padding:24px 0;margin-top:40px}
 .footer-grid{display:grid;grid-template-columns:1fr;gap:16px}
 .footer-nav a{display:block;color:var(--muted);text-decoration:none;margin-bottom:6px}
 
-/* responsive: tablets and up */
 @media(min-width:760px){
   .main-nav{display:flex;gap:18px}
   .nav-link{color:var(--muted);text-decoration:none;font-weight:600}
@@ -167,8 +163,8 @@ blockquote cite{display:block;margin-top:8px;color:var(--white);font-weight:600}
   .footer-grid{grid-template-columns:1fr 1fr 1fr;align-items:start}
 }
 
-/* large screens */
 @media(min-width:1100px){
   .hero-text h1{font-size:44px}
   .hero-text p{font-size:18px}
 }
+
