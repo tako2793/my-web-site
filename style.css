@@ -116,7 +116,7 @@ body{
 .feature h3{margin:0 0 6px 0}
 .feature p{margin:0;color:var(--muted);font-size:14px}
 
-.work{margin:40px 0}
+.work{margin:auto}
 .work-grid{
   display:grid;
   grid-template-columns:1fr;
@@ -171,6 +171,7 @@ blockquote cite{display:block;margin-top:8px;color:var(--white);font-weight:600}
   .hero-text h1{font-size:44px}
   .hero-text p{font-size:18px}
 }
+
 
 
 
