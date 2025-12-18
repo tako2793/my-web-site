@@ -125,8 +125,7 @@ body{
 .work-grid figure{background:var(--card);padding:8px;border-radius:8px}
 .work-grid img{width:100%;height:220px;object-fit:cover;border-radius:6px}
 .work-grid figcaption{color:var(--muted);font-size:14px;padding:8px 4px}
-.work-container{margin: auto;}
-.work-grid{margin: auto;}
+.work-container{align-items: center;}
 
 .testimonials{margin:auto}
 .test-grid{display:grid;grid-template-columns:1fr;gap:12px}
@@ -171,6 +170,7 @@ blockquote cite{display:block;margin-top:8px;color:var(--white);font-weight:600}
   .hero-text h1{font-size:44px}
   .hero-text p{font-size:18px}
 }
+
 
 
 
